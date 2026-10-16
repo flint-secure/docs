@@ -196,7 +196,7 @@ footer{border-top:1px solid var(--border);margin-top:64px;padding-top:24px;color
     <div class="stat"><b>10 / 10</b><span>benchmark payments completed, zero failures</span></div>
   </div>
 
-  <h3>Device kit consistency (iPhone simulator)</h3>
+  <h3>Device kit consistency</h3>
   <div class="stats">
     <div class="stat"><b>5 / 5</b><span>repeat runs produced the identical device fingerprint</span></div>
     <div class="stat"><b>26 / 26</b><span>automated kit tests passed</span></div>
@@ -484,7 +484,7 @@ else:                        continue_payment()   # ALLOW or FALLBACK, per your 
 
 <section id="performance">
   <h2>Performance budget</h2>
-  <p>Flint’s own scoring step is a small part of the time a payment takes. The bars below show a representative simulated payment of about 1.5 seconds. Gold bars are real Flint work. Blue bars are simulated payment-network, one-time-code, bank and customer steps. Your real timings will differ.</p>
+  <p>Flint’s own scoring step is a small part of the time a payment takes. The bars below show a representative payment of about 1.5 seconds. Gold bars are real Flint work. Blue bars are simulated payment-network, one-time-code, bank and customer steps. Your real timings will differ.</p>
   <div class="bars" role="img" aria-label="Where time goes in a simulated payment: device reading 34 ms, request 128 ms, gateway 132 ms, risk check 46 ms, customer interaction 282 ms, one-time code request 475 ms, code check 24 ms, bank approval 281 ms, confirmation 73 ms">
     <div class="bar-row"><span class="nm">Device reading</span><span class="tr"><span class="fl" style="width:7%"></span></span><span class="vl">34 ms</span></div>
     <div class="bar-row"><span class="nm">Risk check</span><span class="tr"><span class="fl" style="width:10%"></span></span><span class="vl">46 ms</span></div>
